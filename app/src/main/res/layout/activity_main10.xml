@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity10">
+
+    <RelativeLayout
+        android:id="@+id/orderAmountRL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@color/colorAccent"
+        android:paddingHorizontal="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/orderComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="sans-serif-medium"
+            android:text="ORDER CONFIRMED."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderComment"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="sans-serif-medium"
+            android:text="ORDER ID #000000000"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/orderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="00:00 pm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_9sdp"/>
+
+        <TextView
+            android:id="@+id/cancelOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="Cancel Order"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_9sdp"/>
+
+        <TextView
+            android:id="@+id/modifyOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="Modify Order"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_9sdp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderAmountRL"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/cart_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yourCart"
+            android:layout_alignTop="@+id/cart_item_image"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/cart_item_image"
+            android:text="Crystal Veg Dimsum"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/normalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cart_item_name"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toEndOf="@+id/cart_item_image"
+            android:text="136"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:id="@+id/addLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cart_item_name"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/textborder2"
+            android:gravity="center_vertical"
+            android:paddingVertical="@dimen/_2sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:id="@+id/remove"
+                android:src="@drawable/ic_baseline_remove_24"/>
+
+            <TextView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@color/babyPink"
+                android:gravity="center"
+                android:id="@+id/addRemoveNumber"
+                android:text="2"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:id="@+id/add"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_add_24"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addLL"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:text="272"
+            android:textColor="@android:color/black"/>
+
+        <View   
+            android:id="@+id/viewTwo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/totalPrice"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewTwo"
+            android:fontFamily="sans-serif-light"
+            android:text="TOTAL"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/total"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="sans-serif-light"
+            android:text="272"
+            android:id="@+id/totalPay"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10sdp"/>
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_width="@dimen/_185sdp"
+        android:id="@+id/chef"
+        android:layout_height="@dimen/_172sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/inMinutes"
+        android:src="@drawable/preparing"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/inMinutes"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@android:color/black"
+        android:text="YOUR FOOD WILL BE READY IN 20 MINUTES"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40sdp"/>
+</RelativeLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/dialogOtherService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="Other Services"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/cutlery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogOtherService"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Cutlery"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"/>
+    
+    <RadioButton
+        android:id="@+id/cutlerySelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cutlery"         
+        android:layout_alignParentEnd="true"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/cutlerySelect"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/cutlery"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_panorama_fish_eye_24"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/cutleryCheck"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/cutlery"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_check_circle_24"-->
+<!--        android:visibility="gone"/>-->
+
+    <TextView
+        android:id="@+id/water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cutlery"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Water"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"/>
+
+    <RadioButton
+        android:id="@+id/waterSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/water"
+        android:layout_alignParentEnd="true"/>
+
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/waterSelect"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/water"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_panorama_fish_eye_24"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/waterCheck"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/water"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_check_circle_24"-->
+<!--        android:visibility="gone"/>-->
+
+    <TextView
+        android:id="@+id/tissue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/water"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Tissue"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"/>
+
+    <RadioButton
+        android:id="@+id/tissueSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tissue"
+        android:layout_alignParentEnd="true"/>
+
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/tissueSelect"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/tissue"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_panorama_fish_eye_24"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/tissueCheck"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/tissue"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_check_circle_24"-->
+<!--        android:visibility="gone"/>-->
+
+    <TextView
+        android:id="@+id/pickle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tissue"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Pickle"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"/>
+
+    <RadioButton
+        android:id="@+id/pickleSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pickle"
+        android:layout_alignParentEnd="true"/>
+
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/pickleSelect"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/pickle"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_panorama_fish_eye_24"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/pickleCheck"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/pickle"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_check_circle_24"-->
+<!--        android:visibility="gone"/>-->
+
+    <TextView
+        android:id="@+id/others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickle"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Others"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"/>
+
+    <RadioButton
+        android:id="@+id/othersSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/others"
+        android:layout_alignParentEnd="true"/>
+
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/othersSelect"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/others"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_panorama_fish_eye_24"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/othersCheck"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/others"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/ic_baseline_check_circle_24"-->
+<!--        android:visibility="gone"/>-->
+
+    <EditText
+        android:id="@+id/dialogET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/others"
+        android:enabled="false"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/textborder"
+        android:gravity="top"
+        android:textSize="@dimen/_12sdp"
+        android:hint="Others..."
+        android:padding="@dimen/_5sdp"/>
+
+    <Button
+        android:id="@+id/dialogDone"
+        android:layout_width="@dimen/_72sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/dialogET"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/round_red_btn"
+        android:elevation="@dimen/_1sdp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="DONE"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp"/>
+
+    <TextView
+        android:id="@+id/thankYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:text="Thankyou for your request"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/requestId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thankYou"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="Your request ID is #00000000"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/dialogOkay"
+        android:layout_width="@dimen/_72sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/requestId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_26sdp"
+        android:background="@drawable/round_red_btn"
+        android:elevation="@dimen/_1sdp"
+        android:gravity="center"
+        android:text="OKAY"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_110sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"/>
+</RelativeLayout>

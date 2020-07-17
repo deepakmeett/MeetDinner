@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/VegRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewOne">
+
+            <TextView
+                android:id="@+id/veg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="VEG"
+                android:textSize="@dimen/_12sdp"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/veg"
+                android:switchMinWidth="@dimen/_27sdp"
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/switch_track"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/VegRL">
+
+            <TextView
+                android:id="@+id/eeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="EEG"
+                android:textSize="@dimen/_12sdp"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/eeg"
+                android:switchMinWidth="@dimen/_27sdp"
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/switch_track"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/search"
+            android:src="@drawable/ic_baseline_shopping_cart_24"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/search"/>
+
+        <TextView
+            android:id="@+id/recommended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/VegRL"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="Recommended"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recommended"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_items_One"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            tools:itemCount="2"
+            tools:listitem="@layout/dishes_item"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/otherServicesOne"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/floatingbtn"
+        android:elevation="2dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:text="Other Services"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11sdp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

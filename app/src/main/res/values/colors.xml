@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F63F4D</color>
+    <color name="colorPrimaryDark">#F63F4D</color>
+    <color name="colorAccent">#F63F4D</color>
+    <color name="gray">#AEA9A9</color>
+    <color name="lightGray">#ddd</color>
+    <color name="grayBlack">#585656</color>
+    <color name="facebookBtn">#4873AF</color>
+    <color name="gmailBtn">#FF5246</color>
+    <color name="darkRed">#F21E36</color>
+    <color name="lightTransparent">#7F000000</color>
+    <color name="iconTint">#AEA9A9</color>
+    <color name="babyPink">#F4B5BA</color>
+    <color name="background">#FFFAFA</color>
+
+</resources>
+

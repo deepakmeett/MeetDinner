@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarThumbVertical="@android:color/transparent"
+    tools:context=".activity.MainActivity5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/boatImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/boatimage"/>
+
+        <RelativeLayout
+            android:id="@+id/boatRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boatImage"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/vendorName"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="wrap_content"
+                android:text="Vendor Name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/vendorAddress"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vendorName"
+                android:text="Vendor Address"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/ratingRL"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp">
+
+                <RatingBar
+                    android:id="@+id/dineInReview"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/dineInReview"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/dineInReview"
+                    android:text="0.0"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <TextView
+                    android:id="@+id/ratingData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dineInReview"
+                    android:layout_alignStart="@+id/dineInReview"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:text="Rating Data"
+                    android:textSize="@dimen/_10sdp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ratingRL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp">
+
+                <RatingBar
+                    android:id="@+id/deliveryReview"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/deliveryReview"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/deliveryReview"
+                    android:text="0.0"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <TextView
+                    android:id="@+id/ratingData2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryReview"
+                    android:layout_alignStart="@+id/deliveryReview"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:text="Rating Data"
+                    android:textSize="@dimen/_10sdp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameTL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_below="@+id/boatRL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/textborder"
+            android:gravity="center_vertical"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableEnd="@drawable/ic_baseline_person_24"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Name"
+                android:inputType="text"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tableNumberTL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_below="@+id/nameTL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/textborder"
+            android:gravity="center_vertical"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/tableNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableEnd="@drawable/table"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Table Number"
+                android:inputType="number"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/toggle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tableNumberTL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/pink_out_line"
+            android:checkedButton="@+id/offer"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/dineInRadio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="DINE IN"
+                android:textColor="@color/colorAccent"/>
+
+            <RadioButton
+                android:id="@+id/takeAwayRadio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:button="@null"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="TAKE AWAY"
+                android:textColor="@android:color/white"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="@dimen/_89sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_below="@+id/toggle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:background="@drawable/square_btn_pressed"
+            android:elevation="@dimen/_1sdp"
+            android:gravity="center"
+            android:text="CONTINUE"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_12sdp"/>
+    </RelativeLayout>
+</ScrollView>

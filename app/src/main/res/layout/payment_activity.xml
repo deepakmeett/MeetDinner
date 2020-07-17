@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Payment_Activity">
+
+    <RelativeLayout
+        android:id="@+id/orderAmountRL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/orderAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="sans-serif-medium"
+            android:text="ORDER AMOUNT"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/orderRupees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="270"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_32sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/numberItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/orderRupees"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="2 ITEMS"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderAmountRL"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/lightGray"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/upiIcon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/search"
+            android:src="@drawable/redirect"/>
+
+        <TextView
+            android:id="@+id/nameNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toEndOf="@+id/upiIcon"
+            android:text="You will be redirected to your UPI App"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/googlePayRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailRL"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/goolePayImage"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:src="@drawable/googlepay"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_below="@+id/goolePayImage"
+            android:background="@color/lightGray"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Google Pay"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/googlePayButton"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/payTmRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/googlePayRL"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/payTmImage"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:src="@drawable/paytm"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_below="@+id/payTmImage"
+            android:background="@color/lightGray"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Paytm"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/paytmButton"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phonePeRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payTmRL"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/phonePeImage"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:src="@drawable/phonepe"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_below="@+id/phonePeImage"
+            android:background="@color/lightGray"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="PhonePe"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/phonePeButton"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bhimRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonePeRL"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/bhimImage"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:src="@drawable/bhim"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_below="@+id/bhimImage"
+            android:background="@color/lightGray"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="UPI ID"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/bhimButton"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bhimRL"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/orText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:text="OR"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_below="@+id/orText"
+            android:background="@color/lightGray"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cashOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/cashOnCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Cash On Counter"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_below="@+id/cashOnCounter"
+            android:background="@color/lightGray"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cashButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/dialogDone"
+        android:layout_width="@dimen/_94sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/cashOn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/round_red_btn"
+        android:elevation="@dimen/_1sdp"
+        android:gravity="center"
+        android:text="PAY NOW"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp"/>
+</RelativeLayout>

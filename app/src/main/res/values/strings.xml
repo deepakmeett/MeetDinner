@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MeetDinner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo">Logo</string>
+    <string name="proceed_with_your">Proceed with your</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email_address_or_phone_number">Email address or Phone number</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="create_an_account_or_sign_up">Create an account or Sign Up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="its_easier_to_sign_up_now">Its easier to sign up now</string>
+    <string name="get_back_to_login">Get back to Login</string>
+    <string name="user_name">User Name</string>
+</resources>

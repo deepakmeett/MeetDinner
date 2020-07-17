@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/boatImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/boatimage"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/boatImage"
+            android:fillViewport="true"
+            android:scrollbarThumbVertical="@android:color/transparent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/boatRL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_15sdp">
+
+                            <RelativeLayout
+                                android:id="@+id/ratingRL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <RatingBar
+                                    android:id="@+id/dineInReview"
+                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/dineInReview"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_toEndOf="@+id/dineInReview"
+                                    android:text="0.0"
+                                    android:textSize="@dimen/_10sdp"/>
+
+                                <TextView
+                                    android:id="@+id/ratingData"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/dineInReview"
+                                    android:layout_alignStart="@+id/dineInReview"
+                                    android:layout_marginStart="@dimen/_2sdp"
+                                    android:text="Rating Data"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_20sdp"
+                                android:layout_toEndOf="@+id/ratingRL"
+                                android:gravity="center">
+
+                                <RatingBar
+                                    android:id="@+id/deliveryReview"
+                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/deliveryReview"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_toEndOf="@+id/deliveryReview"
+                                    android:text="0.0"
+                                    android:textSize="@dimen/_10sdp"/>
+
+                                <TextView
+                                    android:id="@+id/ratingData2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/deliveryReview"
+                                    android:layout_alignStart="@+id/deliveryReview"
+                                    android:layout_marginStart="@dimen/_2sdp"
+                                    android:text="Rating Data"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/restaurantName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/boatRL"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingHorizontal="@dimen/_15sdp"
+                            android:text="Boathouse Cafe"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/restaurantAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/restaurantName"
+                            android:paddingHorizontal="@dimen/_15sdp"
+                            android:text="Casual Dining-North Indian, Mughlai Elante Mall, Industrial Area, Chandigarh"
+                            android:textSize="@dimen/_11sdp"/>
+
+                        <TextView
+                            android:id="@+id/open"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/restaurantAddress"
+                            android:paddingHorizontal="@dimen/_15sdp"
+                            android:text="OPEN"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/_11sdp"/>
+
+                        <TextView
+                            android:id="@+id/cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/open"
+                            android:paddingHorizontal="@dimen/_15sdp"
+                            android:text="Cost for one - Rs 750 (approx)"
+                            android:textSize="@dimen/_11sdp"/>
+                        
+                        <ImageButton
+                            android:id="@+id/callBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:background="@drawable/ic_baseline_local_phone_24"
+                            android:backgroundTint="@color/colorAccent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignTop="@+id/cost"/>
+
+
+                        <View
+                            android:id="@+id/viewOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_below="@+id/cost"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/lightGray"/>
+
+                        <RelativeLayout
+                            android:id="@+id/VegRL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/viewOne"
+                            android:layout_marginTop="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/veg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:text="VEG"
+                                android:textSize="@dimen/_12sdp"/>
+
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_toEndOf="@+id/veg"
+                                android:switchMinWidth="@dimen/_27sdp"
+                                android:id="@+id/vegSwitch"
+                                android:thumb="@drawable/thumb"
+                                android:track="@drawable/switch_track"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/viewOne"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/VegRL">
+
+                            <TextView
+                                android:id="@+id/eeg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:text="EEG"
+                                android:textSize="@dimen/_12sdp"/>
+
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_toEndOf="@+id/eeg"
+                                android:id="@+id/eggSwitch"
+                                android:switchMinWidth="@dimen/_27sdp"
+                                android:thumb="@drawable/thumb"
+                                android:track="@drawable/switch_track"/>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_below="@id/viewOne"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:src="@drawable/search"/>
+
+                        <TextView
+                            android:id="@+id/today"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/VegRL"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingHorizontal="@dimen/_15sdp"
+                            android:text="Today's Exclusive Dishes"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/itemNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/today"
+                            android:paddingHorizontal="@dimen/_15sdp"
+                            android:text="2 items"
+                            android:textSize="@dimen/_11sdp"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/itemNumber"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:paddingHorizontal="@dimen/_15sdp"
+                            tools:itemCount="3"
+                            tools:listitem="@layout/dishes_item"/>
+                    </RelativeLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <!--    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+    <!--        android:layout_width="@dimen/_110sdp"-->
+    <!--        android:layout_height="@dimen/_35sdp"-->
+    <!--        android:layout_gravity="bottom|end"-->
+    <!--        android:layout_margin="@dimen/_16sdp"-->
+    <!--        android:background="@drawable/floatingbtn"-->
+    <!--        android:elevation="2dp"-->
+    <!--        android:fontFamily="sans-serif-light"-->
+    <!--        android:text="Other Services"-->
+    <!--        style="@style/Widget.App.FloatingActionButton"-->
+    <!--        android:textColor="@android:color/white"-->
+    <!--        android:textStyle="bold"/>-->
+    <Button
+        android:id="@+id/otherServices"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/floatingbtn"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:text="Other Services"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

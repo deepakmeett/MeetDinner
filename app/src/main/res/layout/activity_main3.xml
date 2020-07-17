@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity3">
+
+    <ImageView
+        android:id="@+id/qr_code_logo"
+        android:layout_width="@dimen/_172sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_38sdp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="center_horizontal"
+        android:id="@+id/contactLess"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@+id/qr_code_logo"
+        android:textColor="@android:color/black"
+        android:text="Your Contactless dine-in partner"/>
+
+    <Button
+        android:id="@+id/scan_qr"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/contactLess"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/_1sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_52sdp"
+        android:background="@drawable/round_btn_pressed"
+        android:textColor="@drawable/button_text_color"
+        android:text="Scan QR"/>
+    
+    <ImageView
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:src="@drawable/foodone"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
